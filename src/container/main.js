@@ -21,9 +21,7 @@ class Main extends React.Component {
             margin: "2.5vh 5vw",
             fontSize: "18px"
         }
-        const btnStyling = {
-
-        }
+ 
         return(
             <div style={divStyling}>
                 <h2>Welcome</h2>
