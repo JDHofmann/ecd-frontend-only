@@ -19,7 +19,7 @@ export const data = [
     },
     {
         id: 4,
-        question: "Is there a history of substance use or domestic violence in the home",
+        question: "Is there a history of substance use or domestic violence in the home?",
         type: "y-n",
         category: "History"
     },
@@ -31,7 +31,7 @@ export const data = [
     },
     {
         id: 6,
-        question: `Are there bruises on padded areas of the body (e.g., buttocks, face, genitalia, earlobe, neck, upper lip)`,
+        question: `Are there bruises on padded areas of the body (e.g., buttocks, face, genitalia, earlobe, neck, upper lip)?`,
         type: "multiple-choice",
         category: "Physical Exam",
         choices: ["No bruises","1-2 bruises","3-4 bruises","5 or more bruises"]
@@ -80,19 +80,19 @@ export const data = [
     },
     {
         id: 14,
-        question: "Poor hygiene (including dental)",
+        question: "Poor hygiene (including dental)?",
         type: "y-n",
         category: "Physical Exam"
     },
     {
         id: 15,
-        question: "Evidence of under- or malnourishment",
+        question: "Evidence of under- or malnourishment?",
         type: "y-n",
         category: "Physical Exam"
     },
     {
         id: 16,
-        question: "Witnessed aggressive familial interactions",
+        question: "Witnessed aggressive familial interactions?",
         type: "y-n",
         category: "Physical Exam"
     },
