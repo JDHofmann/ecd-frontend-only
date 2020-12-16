@@ -52,11 +52,12 @@ class Screening extends React.Component {
                     <legend>{this.currentQuestion().question}</legend>
                     <p>
                         <label>Yes</label>
-                        <input name="y/n" type="radio" value="1"/>
+                        <input name="y/n" type="radio" value="1"
+                        />
                     </p>
                     <p>
                         <label>No</label>
-                        <input name="y/n" type="radio" value="0" checked="true"/>
+                        <input name="y/n" type="radio" value="0"/>
                     </p>
                 </fieldset>
             </>
@@ -67,7 +68,7 @@ class Screening extends React.Component {
  
         return(
             <>
-            {this.props.page > 25 ?
+            {this.props.page > 24 ?
 
                 <Redirect to="/resources"/>
                 : null
@@ -77,6 +78,7 @@ class Screening extends React.Component {
                     className="form-container"
                 >
                     {this.renderQuestion()}
+                    <div className="btn-div">
                     <button
                         onClick={this.prevPageClick} 
                         className="pag-btn prev"
@@ -85,6 +87,7 @@ class Screening extends React.Component {
                         onClick={this.nextPageClick}
                         className="pag-btn next"
                     >Next</button>
+                    </div>
 
                 </form>
             </div>
