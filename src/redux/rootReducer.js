@@ -20,6 +20,9 @@ const pageReducer = (
             console.log("prev page")
             return state -= 1
 
+        case 'RESET_PAGE':
+            return 0
+
         default :
         return state
     }
@@ -44,6 +47,8 @@ const scoreReducer = (
         case 'UPDATE_SCORE':
             return state + action.newScore
 
+        case 'RESET_SCORE':
+             return 0   
         default :
         return state
     }
