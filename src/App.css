@@ -135,7 +135,9 @@ legend {
   margin-left: 5vw;
 }
 .resources ul li {
-  margin-left: 5vw;
+  margin: 1vh 0 1vh 5vw;
+  /* font-size: 1.1em; */
+  /* text-align: center; */
 }
 
  h3 {
@@ -152,8 +154,7 @@ h2 {
 }
 
  h4 {
-  color: #536e4c;
-  color: #3d489c;
+  color: #4040a0;
 }
 
 .follow-up p{
