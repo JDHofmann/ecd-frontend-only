@@ -9,3 +9,10 @@ export const prevPage = () => {
         type: 'PREV_PAGE'
     }
 }
+
+export const updateScore = (newScore) => {
+    return {
+        type: 'UPDATE_SCORE',
+        newScore
+    }
+}

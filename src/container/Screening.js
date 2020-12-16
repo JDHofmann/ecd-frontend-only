@@ -1,10 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { prevPage, nextPage } from '../redux/actions';
+import { Redirect } from 'react-router-dom';
+import { prevPage, nextPage, updateScore } from '../redux/actions';
 // import { data } from '../data.js'
 
 
 class Screening extends React.Component {
+
+    state = {
+        score: 0
+    }
 
     prevPageClick = (e) => {
         e.preventDefault()
@@ -14,43 +19,70 @@ class Screening extends React.Component {
     nextPageClick = (e) => {
         e.preventDefault()
         this.props.nextPage()
+        this.props.updateScore(this.state.score)
     }
     
+    handleChange = (e) => {
+        this.setState({
+            score: parseInt(e.target.value)
+        })
+    }
+
     currentQuestion = () => {
         return this.props.questions[this.props.page]
     }
 
     renderQuestion = () => {
         return  <>
-            <h2>{this.currentQuestion().category}</h2>
+            <h3>{this.currentQuestion().category}</h3>
             { this.currentQuestion().type === "multiple-choice" ?
                 <>
-                <p>{this.currentQuestion().question}</p>
-    { this.currentQuestion().choices.map(c => <><input type="radio"></input><label>{c}</label></>) }
+                <fieldset onChange={this.handleChange}>
+                    <legend>{this.currentQuestion().question}</legend>
+                    { this.currentQuestion().choices.map(c => <p>
+                        <input type="radio" />
+                        <label>{c}</label>
+                        </p>) }
+                </fieldset>
                 </>
                 
             :
             <>
-                <label>{this.currentQuestion().question}</label>
-                <select className="dropdown">
-                    <option>Yes</option>
-                    <option>No</option>
-                </select>
-                </>
+                <fieldset onChange={this.handleChange}>
+                    <legend>{this.currentQuestion().question}</legend>
+                    <p>
+                        <label>Yes</label>
+                        <input name="y/n" type="radio" value="1"/>
+                    </p>
+                    <p>
+                        <label>No</label>
+                        <input name="y/n" type="radio" value="0" checked="true"/>
+                    </p>
+                </fieldset>
+            </>
              }
         </>
     }
     render(){
+        
+
         const divStyling = {
             backgroundColor: "#fff0de",
             height: "90vh",
             width: "90vw",
             margin: "2.5vh 5vw",
-            borderRadius: "25px",
+            borderRadius: "10px",
             color: "#ffffff"
         }
 
+        
         return(
+            <>
+            {this.props.page > 5 ?
+
+                <Redirect to="/resources"/>
+                : null
+            }
             <div style={divStyling}>
                 <form
                     className="form-container"
@@ -67,6 +99,7 @@ class Screening extends React.Component {
 
                 </form>
             </div>
+            </>
         )
     }
 }
@@ -74,14 +107,16 @@ class Screening extends React.Component {
 const msp = state => {
     return {
         page: state.page,
-        questions: state.questions
+        questions: state.questions,
+        score: state.score
     }
 }
 
 const mdp = dispatch => {
     return {
         nextPage: () => dispatch(nextPage()),
-        prevPage: () => dispatch(prevPage())
+        prevPage: () => dispatch(prevPage()),
+        updateScore: (newScore) => dispatch(updateScore(newScore))
     }
 }
 export default connect(msp, mdp)(Screening)

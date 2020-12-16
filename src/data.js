@@ -48,4 +48,112 @@ export const data = [
         type: "y-n",
         category: "Physical Exam"
     },
+    {
+        id: 9,
+        question: "Is there evidence of burn injury that is not consistent with accidental spills or splashes?",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 10,
+        question: "If burns are present, are burns in a stocking or glove pattern?",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 11,
+        question: "If burns are present, are these burns bilateral?",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 12,
+        question: "Are retinal hemorrhages found on exam?",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 13,
+        question: "Are there other signs of neglect?",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 14,
+        question: "Poor hygiene (including dental)",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 15,
+        question: "Evidence of under- or malnourishment",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 16,
+        question: "Witnessed aggressive familial interactions",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 17,
+        question: "Poor parental health and wellness?",
+        type: "y-n",
+        category: "Physical Exam"
+    },
+    {
+        id: 18,
+        question: "Is there evidence of injury on imaging?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 19,
+        question: "Does head CT show subdural hematoma, cerebral edema, diffuse axonal injury or hypoxic ischemic encephalopathy?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 20,
+        question: "On imaging are there any fractures present?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 21,
+        question: "On X-ray, are there metaphyseal fractures, rib fractures, scapular fractures, or fractures of the outer end of the clavicle?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 22,
+        question: "On X-ray, are there mid-clavicular fractures, linear skull bone fractures, long bone fractures?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 23,
+        question: "Are the fractures bilateral?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 24,
+        question: "Are there multiple fractures at various stages of healing?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 25,
+        question: "On abdominal imaging is there bowel or pancreatic injury?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
+    {
+        id: 26,
+        question:"On abdominal imaging is there evidence of delayed presentation (e.g., peritonitis or sepsis)?",
+        type: "y-n",
+        category: "Radiological Findings"
+    },
 ]

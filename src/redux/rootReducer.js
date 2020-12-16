@@ -2,8 +2,9 @@ import { combineReducers } from "redux"
 import { data } from '../data.js'
 
 const defaultState = {
-    page: 1,
-    questions: data
+    page: 0,
+    questions: data,
+    score: 0
 }
 
 const pageReducer = (
@@ -34,9 +35,24 @@ const questionsReducer = (
     }
 }
 
+const scoreReducer = (
+    state = defaultState.score,
+    action
+) => {
+    switch (action.type){
+
+        case 'UPDATE_SCORE':
+            return state + action.newScore
+
+        default :
+        return state
+    }
+}
+
 const rootReducer = combineReducers({
     page: pageReducer,
-    questions: questionsReducer
+    questions: questionsReducer,
+    score: scoreReducer
 })
 
 export default rootReducer
