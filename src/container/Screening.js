@@ -67,7 +67,7 @@ class Screening extends React.Component {
  
         return(
             <>
-            {this.props.page > 26 ?
+            {this.props.page > 25 ?
 
                 <Redirect to="/resources"/>
                 : null
