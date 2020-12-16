@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react'
 import Main from './container/main';
-// import { connect } from 'react-redux';
 import {  Route, Switch } from 'react-router-dom';
 import Screening from './container/Screening';
 import Resources from './container/Resources';

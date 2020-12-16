@@ -1,7 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux';
+import { resetScore, resetPage } from '../redux/actions';
+
+
 
 class Main extends React.Component {
+
+    componentDidMount(){
+        this.props.resetScore()
+        this.props.resetPage()
+    }
 
     clickHandler = () => {
         this.props.beginClickHandler()
@@ -24,4 +33,12 @@ class Main extends React.Component {
         )
     }
 }
-export default Main
+
+const mdp = dispatch => {
+    return {
+        resetScore: () => dispatch(resetScore()),
+        resetPage: () => dispatch(resetPage())
+    }
+}
+
+export default connect(null, mdp)(Main)

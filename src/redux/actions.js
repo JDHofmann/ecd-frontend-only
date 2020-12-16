@@ -10,9 +10,22 @@ export const prevPage = () => {
     }
 }
 
+export const resetPage = () => {
+    return {
+        type: 'RESET_PAGE'
+    }
+}
+
 export const updateScore = (newScore) => {
+    console.log(newScore)
     return {
         type: 'UPDATE_SCORE',
         newScore
+    }
+}
+
+export const resetScore = () => {
+    return {
+        type: 'RESET_SCORE'
     }
 }
