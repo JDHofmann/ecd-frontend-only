@@ -40,7 +40,7 @@ class Screening extends React.Component {
                 <fieldset onChange={this.handleChange}>
                     <legend>{this.currentQuestion().question}</legend>
                     { this.currentQuestion().choices.map(c => <p>
-                        <input type="radio" />
+                        <input name="multi" type="radio" value="1"/>
                         <label>{c}</label>
                         </p>) }
                 </fieldset>
@@ -78,12 +78,12 @@ class Screening extends React.Component {
         
         return(
             <>
-            {this.props.page > 5 ?
+            {this.props.page > 26 ?
 
                 <Redirect to="/resources"/>
                 : null
             }
-            <div style={divStyling}>
+            <div className="main-div">
                 <form
                     className="form-container"
                 >

@@ -20,7 +20,7 @@ class Resources extends React.Component{
             <>
             { this.props.score > 3 ? 
 
-            <div style={divStyling}>
+            <div className="main-div">
                 <h2>Resources</h2>
                 <ul className="resources">
                     <li>
@@ -52,25 +52,31 @@ class Resources extends React.Component{
                         </ul>
                     </li> */}
                 </ul>
-                <form className="follow-up">
-                    <p>Did you refer the patient to an outside resource based on your NAT evaluation?</p>
-                    <input type="radio" id="1"></input>
-                    <label htmlFor="1">Yes, using resources from this app</label>
-                    <input type="radio" id="2"></input>
-                    <label htmlFor="2">Yes, using outside resources</label>
-                    <input type="radio" id="3"></input>
-                    <label htmlFor="3">No</label>
-                    <input type="radio" id="4"></input>
-                    <label htmlFor="4">Other</label>
+                <form className="follow-up resources">
+                    <fieldset>
+                    <legend>Did you refer the patient to an outside resource based on your NAT evaluation?</legend>
+                    <p>
+                        <input type="radio" id="1"></input>
+                        <label htmlFor="1">Yes, using resources from this app</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="2"></input>
+                        <label htmlFor="2">Yes, using outside resources</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="3"></input>
+                        <label htmlFor="3">No</label>
+                    </p>   
+                    </fieldset>
                 </form>
             </div>
             :  
-            <div style={divStyling} className="resources">
+            <div className="resources low">
                 <h3>Thank you for completing the screening.</h3>
                 <h4>This patient is low risk for non-accidental trauma and no further action is neccessary.</h4>
             </div>
             }
-            <div style={divStyling}>
+            <div className="main-div">
                 <div className="resources">
                 <h3>Further Education for Clinicians</h3>
                 <ul>
