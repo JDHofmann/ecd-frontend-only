@@ -98,12 +98,15 @@ legend {
 .btn-div {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+
 }
 
 .pag-btn {
   font-family: Arial, Helvetica, sans-serif;
   display: block;
-  /* position: absolute; */
   margin-top: 10vh;
   display: block;
   width: 20vw;
@@ -116,7 +119,6 @@ legend {
   text-indent: 5px;
   font-weight: 600;
   background-color: #66cc99;
-  bottom: 15vh;
 }
 
 .prev {
