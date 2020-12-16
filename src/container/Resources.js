@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 
 class Resources extends React.Component{
@@ -89,6 +90,7 @@ class Resources extends React.Component{
                     <li><a href="https://www.dorightbykids.org/what-happens-after-i-call/#:~:text=After%20I%20Call%3F-,What%20Happens%20After%20I%20Call%3F,must%20follow%20up%20and%20investigate.&text=The%20child%20may%20be%20examined,reporter%20who%20initiated%20the%20call">Visit Website</a></li>
                 </ul>
                 </div>
+                <NavLink className="begin-btn"  to="/" >Begin Again</NavLink>
             </div>
             </>
         )

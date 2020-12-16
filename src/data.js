@@ -80,25 +80,25 @@ export const data = [
     },
     {
         id: 14,
-        question: "Poor hygiene (including dental)?",
+        question: "Is there poor hygiene (including dental)?",
         type: "y-n",
         category: "Physical Exam"
     },
     {
         id: 15,
-        question: "Evidence of under- or malnourishment?",
+        question: "Is there evidence of under- or malnourishment?",
         type: "y-n",
         category: "Physical Exam"
     },
     {
         id: 16,
-        question: "Witnessed aggressive familial interactions?",
+        question: "Have there been witnessed aggressive familial interactions?",
         type: "y-n",
         category: "Physical Exam"
     },
     {
         id: 17,
-        question: "Poor parental health and wellness?",
+        question: "Is there evidence of poor parental health and wellness?",
         type: "y-n",
         category: "Physical Exam"
     },
@@ -146,13 +146,13 @@ export const data = [
     },
     {
         id: 25,
-        question: "On abdominal imaging is there bowel or pancreatic injury?",
+        question: "On abdominal imaging, is there bowel or pancreatic injury?",
         type: "y-n",
         category: "Radiological Findings"
     },
     {
         id: 26,
-        question:"On abdominal imaging is there evidence of delayed presentation (e.g., peritonitis or sepsis)?",
+        question:"On abdominal imaging, is there evidence of delayed presentation (e.g., peritonitis or sepsis)?",
         type: "y-n",
         category: "Radiological Findings"
     },
