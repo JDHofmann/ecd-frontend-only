@@ -64,18 +64,7 @@ class Screening extends React.Component {
         </>
     }
     render(){
-        
-
-        const divStyling = {
-            backgroundColor: "#fff0de",
-            height: "90vh",
-            width: "90vw",
-            margin: "2.5vh 5vw",
-            borderRadius: "10px",
-            color: "#ffffff"
-        }
-
-        
+ 
         return(
             <>
             {this.props.page > 26 ?

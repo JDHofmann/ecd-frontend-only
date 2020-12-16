@@ -5,16 +5,6 @@ import { connect } from 'react-redux';
 class Resources extends React.Component{
 
     render(){
-        const divStyling = {
-            backgroundColor: "#f0f0f0",
-            // backgroundColor: "#66cc99",
-            // height: "90vh",
-            width: "90vw",
-            margin: "auto 5vw 2.5vh",
-            borderRadius: "25px",
-            padding: "2.5vh auto"
-            // color: "#ffffff"
-        }
 
         return(
             <>
