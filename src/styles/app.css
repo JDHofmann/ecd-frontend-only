@@ -1,0 +1,182 @@
+* {
+  color: #1a2263;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  background-color: #101040;
+  text-align: center;
+}
+
+.main-div {
+  width: 90vw;
+  max-width: 800px;
+  margin: 2.5vh auto;
+  background-color: #f0f0f0;
+  min-height: 90vh;
+  border-radius: 10px;
+}
+
+.form-container {
+  padding: 10vh 5vw;
+}
+
+.low {
+  width: 90vw;
+  max-width: 800px;
+  margin: 2.5vh auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+h1 {
+  width: 90vw;
+  max-width: 800px;
+  margin: 2.5vh auto;
+  color: #f0f0f0;
+}
+
+h2 {
+  padding-top: 5vh;
+  font-size: 1.65em;
+}
+
+h3 {
+  margin: 2.5vh auto;
+  text-align: center;
+  font-size: 1.35em;
+  color: #dea23c;
+}
+
+h4 {
+  color: #4040a0;
+}
+
+.low h3, .low h4 {
+  margin: 2.5vh auto;
+  width: 70%;
+  scale: 1.2;
+}
+
+.intro {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 10vh auto;
+  width: 75%;
+}
+
+fieldset {
+  border: 3px solid #1a2263;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80vw;
+  max-width: calc(800px - 10vw);
+  position: absolute;
+  bottom: 0;
+}
+
+.begin-btn {
+  display: block;
+  background: #66cc99;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #101040;
+  border-radius: 5px;
+  height: 5vh;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  font-weight: 600;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 75%;
+  margin: 5vh auto;
+  line-height: 5vh;
+  text-decoration: none;
+}
+
+.begin-btn:hover {
+  background-color: #f76868;
+}
+
+.begin-btn:focus {
+  background-color: #f76868;
+  outline: none;
+  text-decoration: underline;
+  border: 3px solid #101040;
+}
+
+.pag-btn {
+  display: block;
+  background: #66cc99;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #101040;
+  border-radius: 5px;
+  height: 5vh;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  font-weight: 600;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-top: 10vh;
+  width: 20vw;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.pag-btn:hover {
+  background-color: #f76868;
+}
+
+.pag-btn:focus {
+  background-color: #f76868;
+  outline: none;
+  text-decoration: underline;
+  border: 3px solid #101040;
+}
+
+.resources {
+  padding: 2.5vh 0;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2.5vh;
+}
+
+.resources ul {
+  margin-left: 5vw;
+}
+
+.resources ul li {
+  margin: 1vh 0 1vh 5vw;
+}
+
+.follow-up p {
+  margin: 1vh auto;
+}
+
+.follow-up {
+  display: inline-block;
+  padding: 2.5vh 2.5vw;
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/app.css';
 import React from 'react'
 import Main from './container/main';
 import {  Route, Switch } from 'react-router-dom';
