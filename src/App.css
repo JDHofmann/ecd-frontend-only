@@ -1,51 +1,35 @@
-body {
+/* body {
   background-color: #101040;
-}
+} */
 
-.main-div {
+/* .main-div {
   background-color: #f0f0f0;
   min-height: 90vh;
   width: 90vw;
   max-width: 800px;
   margin: 2.5vh auto;
   border-radius: 10px;
-  /* color: #ffffff */
 }
-
-.low {
+*/
+/* .low {
   background-color: #f0f0f0;
   width: 90vw;
   max-width: 800px;
   margin: 2.5vh auto;
   border-radius: 10px;
-}
+} */
 
-.low h3, .low h4 {
-  width: 70%;
-  margin: 2.5vh auto;
-  scale: 1.2;
-}
 
-h1 {
-  /* color: #ffffff;
-  color: #ebcab3; */
-  color: #f0f0f0;
-  margin: 1vh auto;
+
+/* h1 {
+
   width: 90vw;
   max-width: 800px;
-}
+} */
 
-* {
-  color: #1a2263;
-  list-style-type: none;
-  font-family: 'Montserrat', sans-serif;
-}
 
-ul, li {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
+
+
 
 .App {
   text-align: center;

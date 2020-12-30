@@ -1,4 +1,46 @@
+* {
+  color: #1a2263;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 body {
   background-color: #101040;
+}
+
+.main-div {
+  width: 90vw;
+  max-width: 800px;
+  margin: 2.5vh auto;
+  background-color: #f0f0f0;
+  min-height: 90vh;
+  border-radius: 10px;
+}
+
+.low {
+  width: 90vw;
+  max-width: 800px;
+  margin: 2.5vh auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+h1 {
+  width: 90vw;
+  max-width: 800px;
+  margin: 2.5vh auto;
+  color: #f0f0f0;
+}
+
+.low h3, .low h4 {
+  margin: 2.5vh auto;
+  width: 70%;
+  scale: 1.2;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,3 +1,53 @@
+@import './variables';
+
+@mixin mainWidth(){
+    width: 90vw;
+    max-width: 800px;
+}
+
+@mixin centered(){
+    margin: 2.5vh auto;
+}
+
+* {
+    color: #1a2263;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
 body {
-    background-color: #101040;
+    background-color: $backgroundColor;
+}
+
+.main-div {
+    @include mainWidth();
+    @include centered();
+    background-color: $secondaryBackground;
+    min-height: 90vh;
+    border-radius: 10px;
+}
+
+.low {
+    @include mainWidth();
+    @include centered();
+    background-color: $secondaryBackground;
+    border-radius: 10px;
+  }
+
+h1 {
+    @include mainWidth();
+    @include centered();
+    color: $secondaryBackground;
+}
+
+.low h3, .low h4 {
+    @include centered();
+    width: 70%;
+    scale: 1.2;
   }
