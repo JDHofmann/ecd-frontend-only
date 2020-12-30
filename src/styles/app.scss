@@ -9,6 +9,21 @@
     margin: 2.5vh auto;
 }
 
+@mixin button(){
+    background: $btnColor;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #101040;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    font-weight: 600;
+    transition: .4s;
+    &:hover{
+        background-color: $btnHoverColor;
+    }
+}
+
 * {
     color: #1a2263;
     list-style-type: none;
@@ -23,6 +38,7 @@ ul, li {
 
 body {
     background-color: $backgroundColor;
+    text-align: center;
 }
 
 .main-div {
@@ -33,12 +49,16 @@ body {
     border-radius: 10px;
 }
 
+.form-container {
+    padding: 10vh 5vw;
+}
+
 .low {
     @include mainWidth();
     @include centered();
     background-color: $secondaryBackground;
     border-radius: 10px;
-  }
+}
 
 h1 {
     @include mainWidth();
@@ -46,8 +66,78 @@ h1 {
     color: $secondaryBackground;
 }
 
+h2 {
+    padding-top: 5vh;
+    font-size: 1.65em;
+}
+h3 {
+    @include centered();
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 1.35em;
+    color: #dea23c;
+}
+
+h4 {
+    color: #4040a0;
+}
+
 .low h3, .low h4 {
     @include centered();
     width: 70%;
     scale: 1.2;
-  }
+}
+
+.intro {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 10vh auto;
+    width: 75%;
+}
+
+.begin-btn {
+    @include button();
+    display: block;
+    width: 75%;
+    height: 5vh;
+    margin: 5vh auto;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    font-weight: 600;
+    line-height: 5vh;
+    text-decoration: none;
+}
+
+// .begin-btn:hover, .begin-btn:focus {
+    
+// }
+
+fieldset {
+    border: 3px solid #1a2263;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pag-btn {
+    @include button();
+    display: block;
+    margin-top: 10vh;
+    display: block;
+    width: 20vw;
+    min-width: 100px;
+    height: 5vh;
+}
